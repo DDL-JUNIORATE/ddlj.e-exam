@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - DDL Juniorate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2, h3, h4 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Daughters of Divine Love Juniorate, Abakpa, Enugu</h2>
+        <h3>2025/2026 Academic Year Entrance Examination Form</h3>
+        <form id="admissionForm">
+            
+            <h4>SECTION A: STUDENT INFORMATION</h4>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" required>
+
+            <label for="address">Home Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City/Town:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State/Province:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="phone">Student’s Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Student’s Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <h4>SECTION B: PARENT/GUARDIAN INFORMATION</h4>
+            <label for="father_name">Father’s/Guardian’s Full Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="father_phone">Phone Number:</label>
+            <input type="tel" id="father_phone" name="father_phone" required>
+
+            <label for="father_email">Email Address:</label>
+            <input type="email" id="father_email" name="father_email" required>
+
+            <label for="father_occupation">Occupation:</label>
+            <input type="text" id="father_occupation" name="father_occupation" required>
+
+            <label for="mother_name">Mother’s/Guardian’s Full Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+
+            <label for="mother_phone">Phone Number:</label>
+            <input type="tel" id="mother_phone" name="mother_phone" required>
+
+            <label for="mother_email">Email Address:</label>
+            <input type="email" id="mother_email" name="mother_email" required>
+
+            <h4>SECTION C: ACADEMIC INFORMATION</h4>
+            <label for="prev_school">Previous School Name:</label>
+            <input type="text" id="prev_school" name="prev_school" required>
+
+            <label for="last_class">Last Class Attended:</label>
+            <input type="text" id="last_class" name="last_class" required>
+
+            <h4>SECTION D: MEDICAL INFORMATION</h4>
+            <label for="blood_group">Blood Group:</label>
+            <input type="text" id="blood_group" name="blood_group" required>
+
+            <label for="allergies">Allergies (if any):</label>
+            <input type="text" id="allergies" name="allergies">
+
+            <h4>SECTION E: TRANSPORTATION INFORMATION</h4>
+            <label>Mode of Transport:</label>
+            <select id="transport_mode" name="transport_mode" required>
+                <option value="">Select</option>
+                <option value="school_bus">School Bus</option>
+                <option value="private_car">Private Car</option>
+                <option value="walking">Walking</option>
+                <option value="other">Other</option>
+            </select>
+
+            <h4>SECTION F: EXTRA-CURRICULAR ACTIVITIES</h4>
+            <label for="sports">Preferred Sports:</label>
+            <input type="text" id="sports" name="sports">
+
+            <h4>SECTION G: DECLARATION</h4>
+            <p>I hereby declare that all the information provided in this form is true and correct to the best of my knowledge.</p>
+            <label for="signature">Student’s Signature:</label>
+            <input type="text" id="signature" name="signature" required>
+
+            <label for="parent_signature">Parent/Guardian’s Signature:</label>
+            <input type="text" id="parent_signature" name="parent_signature" required>
+
+            <p>Payment Details: Pay 5000 NGN to Opay, Account No: 09037191117</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            window.location.href = "responseform.html";
+        }
+    </script>
+</body>
+</html>

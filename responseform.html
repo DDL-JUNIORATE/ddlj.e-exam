@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - DDL Juniorate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 60%;
+            margin: auto;
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+        }
+        #confirmation {
+            display: none;
+            margin-top: 20px;
+            border: 2px solid #000;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <title>Admission Form - DDL Juniorate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Daughters of Divine Love Juniorate, Abakpa, Enugu</h2>
+        <h3>2025/2026 Academic Year Entrance Examination Form</h3>
+        <form id="admissionForm" action="https://your-backend-server.com/submit" method="POST" onsubmit="handleSubmit(event)">
+            
+            <h4>SECTION A: STUDENT INFORMATION</h4>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" required>
+
+            <label for="address">Home Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City/Town:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State/Province:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="phone">Student’s Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Student’s Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <h4>SECTION B: PARENT/GUARDIAN INFORMATION</h4>
+            <label for="father_name">Father’s/Guardian’s Full Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="father_phone">Phone Number:</label>
+            <input type="tel" id="father_phone" name="father_phone" required>
+
+            <label for="father_email">Email Address:</label>
+            <input type="email" id="father_email" name="father_email" required>
+
+            <label for="father_occupation">Occupation:</label>
+            <input type="text" id="father_occupation" name="father_occupation" required>
+
+            <label for="mother_name">Mother’s/Guardian’s Full Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+
+            <label for="mother_phone">Phone Number:</label>
+            <input type="tel" id="mother_phone" name="mother_phone" required>
+
+            <label for="mother_email">Email Address:</label>
+            <input type="email" id="mother_email" name="mother_email" required>
+
+            <h4>SECTION C: ACADEMIC INFORMATION</h4>
+            <label for="prev_school">Previous School Name:</label>
+            <input type="text" id="prev_school" name="prev_school" required>
+
+            <label for="last_class">Last Class Attended:</label>
+            <input type="text" id="last_class" name="last_class" required>
+
+            <h4>SECTION D: MEDICAL INFORMATION</h4>
+            <label for="blood_group">Blood Group:</label>
+            <input type="text" id="blood_group" name="blood_group" required>
+
+            <label for="allergies">Allergies (if any):</label>
+            <input type="text" id="allergies" name="allergies">
+
+            <h4>SECTION E: TRANSPORTATION INFORMATION</h4>
+            <label>Mode of Transport:</label>
+            <select id="transport_mode" name="transport_mode" required>
+                <option value="">Select</option>
+                <option value="school_bus">School Bus</option>
+                <option value="private_car">Private Car</option>
+                <option value="walking">Walking</option>
+                <option value="other">Other</option>
+            </select>
+
+            <h4>SECTION F: EXTRA-CURRICULAR ACTIVITIES</h4>
+            <label for="sports">Preferred Sports:</label>
+            <input type="text" id="sports" name="sports">
+
+            <h4>SECTION G: DECLARATION</h4>
+            <p>I hereby declare that all the information provided in this form is true and correct to the best of my knowledge.</p>
+            <label for="signature">Student’s Signature:</label>
+            <input type="text" id="signature" name="signature" required>
+
+            <label for="parent_signature">Parent/Guardian’s Signature:</label>
+            <input type="text" id="parent_signature" name="parent_signature" required>
+
+            <p>Payment Details: Pay 5000 NGN to Opay, Account No: 09037191117</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2>Daughters of Divine Love Juniorate, Abakpa, Enugu</h2>
+        <h3>2025/2026 Academic Year Entrance Examination Form</h3>
+        <form id="admissionForm">
+            
+            <h4>SECTION A: STUDENT INFORMATION</h4>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="grade">Grade/Program Applied For:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <p>Payment Details: Pay 5000 NGN to Opay, Account No: 09037191117</p>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="confirmation">
+            <h3>Admission Form Submission Successful</h3>
+            <p>Dear <span id="confirmName"></span>,</p>
+            <p>Thank you for submitting your admission form to Daughters of Divine Love Juniorate. Your application has been successfully received.</p>
+            <p><strong>Application Details:</strong></p>
+            <p>Application Number: <span id="confirmID"></span></p>
+            <p>Applicant’s Name: <span id="confirmName2"></span></p>
+            <p>Grade/Program Applied For: <span id="confirmGrade"></span></p>
+            <p>Account Number: 09037191117 (Opay)</p>
+            <p>Submission Date: <span id="confirmDate"></span></p>
+            <p>A confirmation email has been sent to your registered email address.</p>
+            <button onclick="window.print()">Print Confirmation</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("admissionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value;
+            let grade = document.getElementById("grade").value;
+            let uniqueID = "DDLJ" + Math.floor(Math.random() * 1000000);
+            let date = new Date().toLocaleString();
+            
+            document.getElementById("confirmName").textContent = name;
+            document.getElementById("confirmName2").textContent = name;
+            document.getElementById("confirmID").textContent = uniqueID;
+            document.getElementById("confirmGrade").textContent = grade;
+            document.getElementById("confirmDate").textContent = date;
+
+            document.getElementById("admissionForm").style.display = "none";
+            document.getElementById("confirmation").style.display = "block";
+        });
+    </script>
+
+<div class="admin-panel" id="adminPanel" style="display: none;">
+    <h3>Admin Panel</h3>
+    <button onclick="downloadCSV()">Download Applications</button>
+</div>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        window.location.href = "response.html";
+    }
+
+    function downloadCSV() {
+        window.location.href = "https://your-backend-server.com/download-csv";
+    }
+
+    function checkAdmin() {
+        let password = prompt("Enter admin password:");
+        if (password === "admin123") { // Change this password for security
+            document.getElementById("adminPanel").style.display = "block";
+        } else {
+            alert("Access Denied");
+        }
+    }
+</script>
+<button onclick="checkAdmin()">Admin Login</button>
+</body>
+</html>
